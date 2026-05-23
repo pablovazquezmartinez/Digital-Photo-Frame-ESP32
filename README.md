@@ -1,3 +1,5 @@
+<img width="1588" height="1192" alt="image" src="https://github.com/user-attachments/assets/1b20de27-81ca-42b7-b5e2-a2e4747419ff" />
+
 # ESP32 Digital Photo Frame
 
 An DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT display**. This project features a dual SPI bus configuration to eliminate data interference and maximize image loading speeds.

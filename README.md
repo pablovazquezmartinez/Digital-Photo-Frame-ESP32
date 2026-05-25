@@ -75,7 +75,7 @@ To ensure the frame works correctly, your images must be formatted as follows:
 1.  Clone this repository.
 2.  Install `Adafruit_ILI9341` and `Adafruit_GFX` libraries in your Arduino IDE.
 3.  Upload the `main.ino` sketch to your ESP32.
-4.  Check the **Connection_Diagram.pdf** for wiring details.
+4.  Check the **Schematics.pdf** for wiring details.
 
 ---
 *Code helped by AI*

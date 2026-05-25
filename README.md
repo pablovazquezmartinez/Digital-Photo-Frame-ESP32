@@ -17,7 +17,7 @@ An DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT displ
 * ILI9341 TFT Display (2.8" or 2.4" SPI)
 * Micro SD Card Module
 * 2x Push Buttons
-* Lithium Battery, Charger Module and toggle button (Optional)
+* Lithium Battery, Charger Module (TP4056) and toggle button (Optional)
 
 ## Wiring & Pinout
 To avoid boot loops and "strapping pin" conflicts, the following pinout is used. 

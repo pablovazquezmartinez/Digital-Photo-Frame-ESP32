@@ -62,6 +62,22 @@ To ensure the frame works correctly, your images must be formatted as follows:
 * **Format:** BMP (Windows 24-bit / R8 G8 B8).
 * **Resolution:** 320x240 pixels.
 * **Storage:** Place images in the root directory of a FAT32 formatted Micro SD card.
+### Automated Image Batch Converter (Python Script)
+To save time, an automated Python utility is provided in the `tools/` directory to process images in bulk. 
+
+The script prompts you for the full path of your source image folder. It then automatically scales, converts, and exports all compatible files into a newly created `Images-ready-to-use/` directory.
+
+>  **Important:** The ESP32 firmware expects images to be in the root directory of the SD card. When moving the processed files, copy the **contents** of the `Images-ready-to-use` folder directly into the SD card, rather than copying the folder itself.
+
+#### Prerequisites
+Before running the script, you need to have **Python 3** installed on your computer and install the required image libraries.
+
+1. **Install Python 3:** Ensure Python is installed and added to your system's PATH.
+2. **Install Libraries:** Open your computer's terminal (Command Prompt, PowerShell, or Terminal) and run the following command to install the required dependencies:
+
+```bash
+pip install pillow pillow_heif
+```
 
 ## User Controls
 * **Manual Navigation:** Press the "Next" (GPIO 27) or "Previous" (GPIO 26) button.

@@ -2,7 +2,7 @@
 
 # ESP32 Digital Photo Frame
 
-A DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT display**. This project features a dual SPI bus configuration to eliminate data interference and maximize image loading speeds. The repository includes a custom PCB design, including all KiCad source and fabrication files. The board is production-ready and plug-and-play.
+A DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT display**. This project features a dual SPI bus configuration to eliminate data interference and maximize image loading speeds. The repository also includes a custom PCB design, including all KiCad source and fabrication files. The board is production-ready and plug-and-play.
 
 ## Key Features
 * **Dual SPI Architecture:** Uses separate buses for the Display (VSPI) and the SD Card (HSPI) for stable, high-speed performance.
@@ -86,6 +86,29 @@ pip install pillow pillow_heif
     * **Red Label:** Manual mode active.
 * **On-off control:** Press the toggle button conected to the battery.
 
+## PCB Design (Hardware)
+
+This project includes the complete design of a production-ready custom carrier board. It is designed to be fully *plug-and-play*: you simply need to plug the ESP32 and the display into their respective sockets, with no manual soldering required.
+
+### Display Compatibility (Extra CS Pin)
+
+The original design of this PCB is optimized for standard 8-pin displays. However, to maximize the project's compatibility, **I have added an extra pin** for displays that include a **CS (Chip Select)** pin. 
+
+At the hardware level, this additional control pin is physically routed to **GPIO 15** on the ESP32.
+
+** Firmware Configuration:**
+
+If you are using an 8-pin display, you don't need to do anything (it works out of the box). But if your display requires the use of the CS pin, you must enable it in the software by following this simple step:
+
+Go to the main code file (`main`) and locate **line 10**. You will need to change the disabled value (`-1`) to the corresponding pin (`15`).
+
+```cpp
+// ❌ Default configuration (8-pin displays without CS):
+#define TFT_CS -1
+
+// ✅ Modified configuration (Displays with CS pin connected):
+#define TFT_CS 15
+```
 
 ## Getting Started
 1.  Clone this repository.

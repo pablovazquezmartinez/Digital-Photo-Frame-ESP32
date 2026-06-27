@@ -109,6 +109,9 @@ Go to the main code file (`main`) and locate **line 10**. You will need to chang
 // ✅ Modified configuration (Displays with CS pin connected):
 #define TFT_CS 15
 ```
+<img width="1656" height="872" alt="photo6_PCB_front" src="https://github.com/user-attachments/assets/bf5ebf09-f3f2-489d-8f43-2c4b423c1b00" />
+
+
 
 ## Getting Started
 1.  Clone this repository.

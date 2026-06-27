@@ -96,7 +96,7 @@ The original design of this PCB is optimized for standard 8-pin displays. Howeve
 
 At the hardware level, this additional control pin is physically routed to **GPIO 15** on the ESP32.
 
-** Firmware Configuration:**
+**Firmware Configuration:**
 
 If you are using an 8-pin display, you don't need to do anything (it works out of the box). But if your display requires the use of the CS pin, you must enable it in the software by following this simple step:
 

@@ -2,7 +2,7 @@
 
 # ESP32 Digital Photo Frame
 
-A DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT display**. This project features a dual SPI bus configuration to eliminate data interference and maximize image loading speeds.
+A DIY digital photo frame project using an **ESP32** and an **ILI9341 TFT display**. This project features a dual SPI bus configuration to eliminate data interference and maximize image loading speeds. The repository includes a custom PCB design, including all KiCad source and fabrication files. The board is production-ready and plug-and-play.
 
 ## Key Features
 * **Dual SPI Architecture:** Uses separate buses for the Display (VSPI) and the SD Card (HSPI) for stable, high-speed performance.
